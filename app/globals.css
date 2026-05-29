@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  /* Palette COSO : orange / blanc / noir */
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --orange: #ff7900; /* Orange brand */
+  --orange-dark: #e56e00;
+  --orange-soft: #fff4ea;
+  --muted: #6b7280;
+  --border: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-orange: var(--orange);
+  --color-orange-dark: var(--orange-dark);
+  --color-orange-soft: var(--orange-soft);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --font-sans: var(--font-manrope);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), system-ui, sans-serif;
+}
+
+/* Scrollbar discrète */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 9999px;
+}
